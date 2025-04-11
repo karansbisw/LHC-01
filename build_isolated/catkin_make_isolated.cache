@@ -1,0 +1,2 @@
+ddynamic_reconfigure:object_detection:openvslam:realsense-ros/realsense2_camera:realsense-ros/realsense2_description
+-G Ninja -DCATKIN_DEVEL_PREFIX=/home/karan/catkin_ws/devel_isolated -DCMAKE_INSTALL_PREFIX=/home/karan/catkin_ws/install_isolated

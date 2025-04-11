@@ -1,0 +1,13 @@
+/home/karan/catkin_ws/install_isolated/_setup_util.py
+/home/karan/catkin_ws/install_isolated/env.sh
+/home/karan/catkin_ws/install_isolated/setup.bash
+/home/karan/catkin_ws/install_isolated/local_setup.bash
+/home/karan/catkin_ws/install_isolated/setup.sh
+/home/karan/catkin_ws/install_isolated/local_setup.sh
+/home/karan/catkin_ws/install_isolated/setup.zsh
+/home/karan/catkin_ws/install_isolated/local_setup.zsh
+/home/karan/catkin_ws/install_isolated/.rosinstall
+/home/karan/catkin_ws/install_isolated/lib/pkgconfig/object_detection.pc
+/home/karan/catkin_ws/install_isolated/share/object_detection/cmake/object_detectionConfig.cmake
+/home/karan/catkin_ws/install_isolated/share/object_detection/cmake/object_detectionConfig-version.cmake
+/home/karan/catkin_ws/install_isolated/share/object_detection/package.xml

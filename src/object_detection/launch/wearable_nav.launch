@@ -1,0 +1,35 @@
+<launch>
+  <!-- Master -->
+  <node pkg="roscore" type="roscore" name="roscore" required="true" />
+
+  <!-- RealSense Camera Node -->
+  <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+    <arg name="enable_depth" value="true" />
+    <arg name="enable_color" value="true" />
+    <arg name="enable_gyro" value="true" />
+    <arg name="enable_accel" value="true" />
+    <arg name="align_depth" value="true" />
+  </include>
+
+  <!-- RTAB-Map SLAM Node -->
+  <include file="$(find rtabmap_ros)/launch/rtabmap.launch">
+    <arg name="rtabmap_args" value="--delete_db_on_start" />
+    <arg name="rgb_topic" value="/camera/color/image_raw" />
+    <arg name="depth_topic" value="/camera/depth/image_rect_raw" />
+    <arg name="camera_info_topic" value="/camera/color/camera_info" />
+    <arg name="approx_sync" value="true" />
+  </include>
+
+  <!-- Tiny YOLO Semantic Detection Node -->
+  <node name="tiny_yolo_semantic_node" pkg="object_detection" type="tiny_yolo_semantic_node.py" output="screen" />
+
+  <!-- Fake GPS Node -->
+  <node name="gps_reader" pkg="object_detection" type="gps_reader.py" output="screen" />
+
+  <!-- Navigation Planner with Voice Input -->
+  <node name="navigation_planner_node" pkg="object_detection" type="navigation_planner.py" output="screen" />
+</launch>
+
+
+
+

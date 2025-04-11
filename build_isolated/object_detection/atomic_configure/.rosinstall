@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/karan/catkin_ws/devel_isolated/object_detection/setup.sh
